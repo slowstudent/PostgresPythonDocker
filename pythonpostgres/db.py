@@ -1,4 +1,4 @@
-DB_HOST = "localhost"
+DB_HOST = "postgres_db"
 DB_NAME = "postgres" 
 DB_USER = "postgres" 
 DB_PASS = "postgres"
