@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    container_name: postgres_db
+  pyth:
+    build:
+      context: ./
+    command: 
+      - python3
+      - ./db.py
+    links:
+      - postgres
